@@ -15,10 +15,10 @@
 ### Explorer:
 >-  https://explorer.nodexcapital.com/dymension
 
-### Automatic Installer
-You can setup your Dymension fullnode in few minutes by using automated script below.
-```
-Coming Soon
+### Cosmos Node Application (CLI)
+You can setup your Dymension fullnode on app_dymd in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/dymension/app_dymd_installer && bash app_dymd_installer
 ```
 ### Public Endpoint
 

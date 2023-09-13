@@ -16,9 +16,9 @@
 >-  https://explorer.nodexcapital.com/babylon
 
 ### Automatic Installer
-You can setup your Babylon fullnode in few minutes by using automated script below.
+You can setup your Babylon fullnode on app_babylond in few minutes below.
 ```
-Coming Soon
+wget -q https://github.com/nodexemperor/testnet/raw/main/babylon/app_babylond_installer && bash app_babylond_installer
 ```
 ### Public Endpoint
 

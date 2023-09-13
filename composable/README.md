@@ -13,12 +13,12 @@
 # Composable Testnet
 
 ### Explorer:
->-  https://explorer.nodexcapital.com/composable
+>-  https://explorer.nodexcapital.com/banksy-testnet
 
-### Automatic Installer
-You can setup your Composable fullnode in few minutes by using automated script below.
-```
-Coming Soon
+### Cosmos Node Application (CLI)
+You can setup your Dymension fullnode on app_centaurid in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/composable/app_centaurid_installer && bash app_centaurid_installer
 ```
 ### Public Endpoint
 

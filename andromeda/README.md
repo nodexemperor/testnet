@@ -15,10 +15,10 @@
 ### Explorer:
 >-  https://explorer.nodexcapital.com/andromeda
 
-### Automatic Installer
-You can setup your Andromeda fullnode in few minutes by using automated script below.
-```
-Coming Soon
+### Cosmos Node Application (CLI)
+You can setup your Andromeda fullnode on app_andromedad in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/andromeda/app_andromedad_installer && bash app_andromedad_installer
 ```
 ### Public Endpoint
 
