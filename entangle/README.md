@@ -7,22 +7,21 @@
 <hr>
 
 <p align="center">
-  <img height="100" height="auto" src="https://polkachu.com/images/chains/althea.png">
+  <img height="100" height="auto" src="https://explorer.nodexcapital.com/logos/entangle.png">
 </p>
 
-# Althea Testnet
+# Entangle Testnet
 
 ### Explorer:
->-  https://explorer.nodexcapital.com//entangle
+>-  https://explorer.nodexcapital.com/entangle
 
 ### Cosmos Node Application (CLI)
-You can setup your Althea fullnode on app_althea in few minutes below.
+You can setup your Entangle fullnode on app_entangle in few minutes below.
 ```bash
-wget -q https://github.com/nodexemperor/testnet/raw/main/althea/app_althea_installer && bash app_althea_installer
+wget -q https://github.com/nodexemperor/testnet/raw/main/entangle/app_entangle_installer && bash app_entangle_installer
 ```
 ### Public Endpoint
 
->- API : Coming Soon
->- RPC : Coming Soon
->- gRPC : Coming Soon
+>- API : https://rpc.entangle-t.nodexcapital.com
+>- RPC : https://rest.entangle-t.nodexcapital.com
 >- JsonRPC : Coming Soon

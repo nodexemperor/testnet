@@ -1,0 +1,32 @@
+##### NODE VARIABLE #####
+
+PROJECT="ENTANGLE"
+NETWORK="TESTNET"
+GO_VERSION="1.21.1"
+REPO_LINK="https://github.com/Entangle-Protocol/entangle-blockchain"
+VERSION="635cb2e2"
+REPO_FOLDER="entangle-repo"
+BINARY="entangled"
+CHAIN="entangle_33133-1"
+FOLDER=".entangled"
+GENESIS="https://raw.githubusercontent.com/Entangle-Protocol/entangle-blockchain/main/config/genesis.json"
+ADDRBOOK="https://pastebin.com/raw/xUG86XMy"
+PEERS="6f41e8e2764c9a00645eab3e41bf6da427cea52b@65.109.116.204:20756"
+SEEDS="76492a1356c14304bdd7ec946a6df0b57ba51fe2@3.92.0.61:26656"
+DENOM="aNGL"
+MIN_GAS_PRICE="10"
+PRUNING="custom"
+INDEXER="null"
+KEYRING="test"
+
+##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
+
+SNAP_NAME=""
+SNAP_LINK="https://snapshots.indonode.net/entangle/entangle-snapshot.tar.lz4"
+SNAP_RPC="https://rpc.entangle-t.nodexcapital.com:443"
+STATESYNC_PEERS="6f41e8e2764c9a00645eab3e41bf6da427cea52b@65.109.116.204:20756"
+
+##### NODE COMPONENTS #####
+
+COSMOVISOR_VERSION="v1.5.0"
+LIBWASMVM_VERSION="v1.4.0"
