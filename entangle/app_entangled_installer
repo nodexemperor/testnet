@@ -2,31 +2,31 @@
 
 ##### NODE VARIABLE #####
 
-PROJECT="ANDROMEDA"
+PROJECT="ENTANGLE"
 NETWORK="TESTNET"
 GO_VERSION="1.21.1"
-REPO_LINK="https://github.com/andromedaprotocol/andromedad"
-VERSION="galileo-3-v1.1.0-beta1"
-REPO_FOLDER="andromeda-repo"
-BINARY="andromedad"
-CHAIN="galileo-3"
-FOLDER=".andromedad"
-GENESIS="https://snapshots.kjnodes.com/andromeda-testnet/genesis.json"
-ADDRBOOK="https://snapshots.kjnodes.com/andromeda-testnet/addrbook.json"
-PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@andromeda-testnet.rpc.kjnodes.com:14756"
-SEEDS="3f472746f46493309650e5a033076689996c8881@andromeda-testnet.rpc.kjnodes.com:14759"
-DENOM="uandr"
-MIN_GAS_PRICE="0.0001"
+REPO_LINK="https://github.com/Entangle-Protocol/entangle-blockchain"
+VERSION="134d9e55"
+REPO_FOLDER="entangle-repo"
+BINARY="entangled"
+CHAIN="entangle_33133-1"
+FOLDER=".entangled"
+GENESIS="https://raw.githubusercontent.com/Entangle-Protocol/entangle-blockchain/main/config/genesis.json"
+ADDRBOOK="https://pastebin.com/raw/xUG86XMy"
+PEERS="6f41e8e2764c9a00645eab3e41bf6da427cea52b@65.109.116.204:20756"
+SEEDS="76492a1356c14304bdd7ec946a6df0b57ba51fe2@3.92.0.61:26656"
+DENOM="aNGL"
+MIN_GAS_PRICE="10"
 PRUNING="custom"
-INDEXER="kv"
+INDEXER="null"
 KEYRING="test"
 
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
 SNAP_NAME=""
-SNAP_LINK="https://snapshots.kjnodes.com/andromeda-testnet/snapshot_latest.tar.lz4"
-SNAP_RPC="https://andromeda-testnet.rpc.kjnodes.com:443"
-STATESYNC_PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@andromeda-testnet.rpc.kjnodes.com:14756"
+SNAP_LINK="https://snapshots.indonode.net/entangle/entangle-snapshot.tar.lz4"
+SNAP_RPC="https://rpc.entangle-t.nodexcapital.com:443"
+STATESYNC_PEERS="6f41e8e2764c9a00645eab3e41bf6da427cea52b@65.109.116.204:20756"
 
 ##### NODE COMPONENTS #####
 

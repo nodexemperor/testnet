@@ -13,7 +13,7 @@
 # Althea Testnet
 
 ### Explorer:
->-  https://explorer.nodexcapital.com//entangle
+>-  https://explorer.nodexcapital.com/althea
 
 ### Cosmos Node Application (CLI)
 You can setup your Althea fullnode on app_althea in few minutes below.

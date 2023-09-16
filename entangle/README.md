@@ -13,15 +13,15 @@
 # Entangle Testnet
 
 ### Explorer:
->-  https://explorer.nodexcapital.com/entangle
+-  https://explorer.nodexcapital.com/entangle
 
 ### Cosmos Node Application (CLI)
-You can setup your Entangle fullnode on app_entangle in few minutes below.
+You can setup your Entangle fullnode on app_entangled in few minutes below.
 ```bash
-wget -q https://github.com/nodexemperor/testnet/raw/main/entangle/app_entangle_installer && bash app_entangle_installer
+wget -q https://github.com/nodexemperor/testnet/raw/main/entangle/app_entangled_installer && bash app_entangled_installer
 ```
 ### Public Endpoint
 
->- API : https://rpc.entangle-t.nodexcapital.com
->- RPC : https://rest.entangle-t.nodexcapital.com
->- JsonRPC : Coming Soon
+- API : https://rpc.entangle-t.nodexcapital.com
+- RPC : https://rest.entangle-t.nodexcapital.com
+- JsonRPC : Coming Soon
