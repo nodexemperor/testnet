@@ -16,9 +16,9 @@
 >-  https://explorer.nodexcapital.com/quasar-testnet
 
 ### Automatic Installer
-You can setup your Quasar fullnode in few minutes by using automated script below.
-```
-Coming Soon
+You can setup your Quasar fullnode on app_quasarnoded in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/quasar/app_quasarnoded_installer && bash app_quasarnoded_installer
 ```
 ### Public Endpoint
 

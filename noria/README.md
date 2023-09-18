@@ -15,10 +15,10 @@
 ### Explorer:
 >-  https://explorer.nodexcapital.com/noria
 
-### Automatic Installer
-You can setup your Noria fullnode in few minutes by using automated script below.
-```
-Coming Soon
+### Cosmos Node Application (CLI)
+You can setup your Noria fullnode on app_noriad in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/noria/app_noriad_installer && bash app_noriad_installer
 ```
 ### Public Endpoint
 

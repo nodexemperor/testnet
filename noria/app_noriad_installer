@@ -2,21 +2,21 @@
 
 ##### NODE VARIABLE #####
 
-PROJECT="BABYLON"
+PROJECT="NORIA"
 NETWORK="TESTNET"
 GO_VERSION="1.21.1"
-REPO_LINK="https://github.com/babylonchain/babylon"
-VERSION="v0.7.2"
-REPO_FOLDER="babylon-repo"
-BINARY="babylond"
-CHAIN="bbn-test-2"
-FOLDER=".babylond"
-GENESIS="https://snapshots.kjnodes.com/babylon-testnet/genesis.json"
-ADDRBOOK="https://snapshots.kjnodes.com/babylon-testnet/addrbook.json"
-PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@babylon-testnet.rpc.kjnodes.com:16456"
-SEEDS="3f472746f46493309650e5a033076689996c8881@babylon-testnet.rpc.kjnodes.com:16459"
-DENOM="ubbn"
-MIN_GAS_PRICE="0.00001"
+REPO_LINK="https://github.com/noria-net/noria"
+VERSION="v1.3.0"
+REPO_FOLDER="noria-repo"
+BINARY="noriad"
+CHAIN="oasis-3"
+FOLDER=".noria"
+GENESIS="https://snapshots.kjnodes.com/noria-testnet/genesis.json"
+ADDRBOOK="https://snapshots.kjnodes.com/noria-testnet/addrbook.json"
+PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@noria-testnet.rpc.kjnodes.com:16156"
+SEEDS="3f472746f46493309650e5a033076689996c8881@noria-testnet.rpc.kjnodes.com:16159"
+DENOM="ucrd"
+MIN_GAS_PRICE="0.0025"
 PRUNING="custom"
 INDEXER="null"
 KEYRING="test"
@@ -24,9 +24,9 @@ KEYRING="test"
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
 SNAP_NAME=""
-SNAP_LINK="https://snapshots.kjnodes.com/babylon-testnet/snapshot_latest.tar.lz4"
-SNAP_RPC="https://babylon-testnet.rpc.kjnodes.com:443"
-STATESYNC_PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@babylon-testnet.rpc.kjnodes.com:16456"
+SNAP_LINK="https://snapshots.kjnodes.com/noria-testnet/snapshot_latest.tar.lz4"
+SNAP_RPC="https://noria-testnet.rpc.kjnodes.com:443"
+STATESYNC_PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@noria-testnet.rpc.kjnodes.com:16156"
 
 ##### NODE COMPONENTS #####
 

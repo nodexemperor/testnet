@@ -2,31 +2,31 @@
 
 ##### NODE VARIABLE #####
 
-PROJECT="BABYLON"
+PROJECT="ZETACHAIN"
 NETWORK="TESTNET"
 GO_VERSION="1.21.1"
-REPO_LINK="https://github.com/babylonchain/babylon"
-VERSION="v0.7.2"
-REPO_FOLDER="babylon-repo"
-BINARY="babylond"
-CHAIN="bbn-test-2"
-FOLDER=".babylond"
-GENESIS="https://snapshots.kjnodes.com/babylon-testnet/genesis.json"
-ADDRBOOK="https://snapshots.kjnodes.com/babylon-testnet/addrbook.json"
-PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@babylon-testnet.rpc.kjnodes.com:16456"
-SEEDS="3f472746f46493309650e5a033076689996c8881@babylon-testnet.rpc.kjnodes.com:16459"
-DENOM="ubbn"
-MIN_GAS_PRICE="0.00001"
-PRUNING="custom"
+REPO_LINK="https://github.com/zeta-chain/node"
+VERSION="v9.0.0"
+REPO_FOLDER="zeta-repo"
+BINARY="zetacored"
+CHAIN="athens_7001-1"
+FOLDER=".zetacored"
+GENESIS="https://snapshots.kjnodes.com/zetachain-testnet/genesis.json"
+ADDRBOOK="https://snapshots.kjnodes.com/zetachain-testnet/addrbook.json"
+PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@zetachain-testnet.rpc.kjnodes.com:16056"
+SEEDS="3f472746f46493309650e5a033076689996c8881@zetachain-testnet.rpc.kjnodes.com:16059"
+DENOM="azeta"
+MIN_GAS_PRICE="0"
+PRUNING="nothing"
 INDEXER="null"
 KEYRING="test"
 
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
 SNAP_NAME=""
-SNAP_LINK="https://snapshots.kjnodes.com/babylon-testnet/snapshot_latest.tar.lz4"
-SNAP_RPC="https://babylon-testnet.rpc.kjnodes.com:443"
-STATESYNC_PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@babylon-testnet.rpc.kjnodes.com:16456"
+SNAP_LINK="https://snapshots.kjnodes.com/zetachain-testnet/snapshot_latest.tar.lz4"
+SNAP_RPC="https://zetachain-testnet.rpc.kjnodes.com:443"
+STATESYNC_PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@zetachain-testnet.rpc.kjnodes.com:16056"
 
 ##### NODE COMPONENTS #####
 

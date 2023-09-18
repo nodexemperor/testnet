@@ -16,9 +16,9 @@
 >-  https://explorer.nodexcapital.com/lava
 
 ### Automatic Installer
-You can setup your Lava fullnode in few minutes by using automated script below.
-```
-Coming Soon
+You can setup your Lava fullnode on app_lavad in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/lava/app_lavad_installer && bash app_lavad_installer
 ```
 ### Public Endpoint
 

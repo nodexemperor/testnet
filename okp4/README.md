@@ -16,9 +16,9 @@
 >-  https://explorer.nodexcapital.com/okp4
 
 ### Automatic Installer
-You can setup your Okp4 fullnode in few minutes by using automated script below.
-```
-Coming Soon
+You can setup your Okp4 fullnode on app_okp4d in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/okp4/app_okp4d_installer && bash app_okp4d_installer
 ```
 ### Public Endpoint
 

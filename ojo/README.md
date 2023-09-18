@@ -16,9 +16,9 @@
 >-  https://explorer.nodexcapital.com/ojo
 
 ### Automatic Installer
-You can setup your Ojo fullnode in few minutes by using automated script below.
-```
-Coming Soon
+You can setup your Ojo fullnode on app_ojod in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/ojo/app_ojod_installer && bash app_ojod_installer
 ```
 ### Public Endpoint
 
