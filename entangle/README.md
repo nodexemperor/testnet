@@ -22,6 +22,6 @@ wget -q https://github.com/nodexemperor/testnet/raw/main/entangle/app_entangled_
 ```
 ### Public Endpoint
 
-- API : https://rpc.entangle-t.nodexcapital.com
-- RPC : https://rest.entangle-t.nodexcapital.com
+- API : Coming Soon
+- RPC : Coming Soon
 - JsonRPC : Coming Soon

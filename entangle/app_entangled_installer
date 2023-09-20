@@ -12,9 +12,9 @@ BINARY="entangled"
 CHAIN="entangle_33133-1"
 FOLDER=".entangled"
 GENESIS="https://raw.githubusercontent.com/Entangle-Protocol/entangle-blockchain/main/config/genesis.json"
-ADDRBOOK="https://pastebin.com/raw/xUG86XMy"
-PEERS="6f41e8e2764c9a00645eab3e41bf6da427cea52b@65.109.116.204:20756"
-SEEDS="76492a1356c14304bdd7ec946a6df0b57ba51fe2@3.92.0.61:26656"
+ADDRBOOK="https://ss-t.entangle.nodestake.top/addrbook.json"
+PEERS="90d91e3fc986ed727d1f381c010b6aa467b6e0b7@18.117.105.199:26656"
+SEEDS="76492a1356c14304bdd7ec946a6df0b57ba51fe2@3.92.0.61:26656,f456ca39de85b3d55c30d4ce7e2af68c023bc0bf@rpc-t.entangle.nodestake.top:666"
 DENOM="aNGL"
 MIN_GAS_PRICE="10"
 PRUNING="custom"
@@ -23,10 +23,10 @@ KEYRING="test"
 
 ##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
 
-SNAP_NAME=""
-SNAP_LINK="https://snapshots.indonode.net/entangle/entangle-snapshot.tar.lz4"
-SNAP_RPC="https://rpc.entangle-t.nodexcapital.com:443"
-STATESYNC_PEERS="6f41e8e2764c9a00645eab3e41bf6da427cea52b@65.109.116.204:20756"
+# SNAP_NAME="$(curl -s https://ss-t.entangle.nodestake.top/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"
+# SNAP_LINK="https://ss-t.entangle.nodestake.top/${SNAP_NAME}"
+SNAP_RPC="https://rpc-t.entangle.nodestake.top:443"
+STATESYNC_PEERS="90d91e3fc986ed727d1f381c010b6aa467b6e0b7@18.117.105.199:26656"
 
 ##### NODE COMPONENTS #####
 
@@ -57,9 +57,9 @@ sed -i 's/MIN_GAS_PRICE=""/MIN_GAS_PRICE="'$MIN_GAS_PRICE'"/g' app_${BINARY}
 sed -i 's/PRUNING=""/PRUNING="'$PRUNING'"/g' app_${BINARY}
 sed -i 's/INDEXER=""/INDEXER="'$INDEXER'"/g' app_${BINARY}
 sed -i 's/KEYRING=""/KEYRING="'$KEYRING'"/g' app_${BINARY}
-# sed -i "s#SNAP_NAME=\"\"#SNAP_NAME="\$(curl -s http://localhost/cosmos/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"#g" app_${BINARY}
-# sed -i "s#SNAP_LINK=\"\"#SNAP_LINK="http://localhost/cosmos/${SNAP_NAME}"#g" app_${BINARY}
-sed -i "s#SNAP_LINK=\"\"#SNAP_LINK=\"$SNAP_LINK\"#g" app_${BINARY}
+sed -i 's#SNAP_NAME=""#SNAP_NAME="$(curl -s https://ss-t.entangle.nodestake.top/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"#g' app_${BINARY}
+sed -i 's#SNAP_LINK=""#SNAP_LINK="https://ss-t.entangle.nodestake.top/${SNAP_NAME}"#g' app_${BINARY}
+# sed -i "s#SNAP_LINK=\"\"#SNAP_LINK=\"$SNAP_LINK\"#g" app_${BINARY}
 sed -i 's#SNAP_RPC=""#SNAP_RPC="'$SNAP_RPC'"#g' app_${BINARY}
 sed -i 's/STATESYNC_PEERS=""/STATESYNC_PEERS="'$STATESYNC_PEERS'"/g' app_${BINARY}
 sed -i 's/COSMOVISOR_VERSION=""/COSMOVISOR_VERSION="'$COSMOVISOR_VERSION'"/g' app_${BINARY}
