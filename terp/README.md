@@ -13,12 +13,12 @@
 # Terp Testnet
 
 ### Explorer:
->-  https://explorer.nodexcapital.com/terp-testnet
+>-  https://explorer.nodexcapital.com/terp
 
-### Automatic Installer
-You can setup your Terp fullnode in few minutes by using automated script below.
-```
-Coming Soon
+### Cosmos Node Application (CLI)
+You can setup your Noria fullnode on app_terpd in few minutes below.
+```bash
+wget -q https://github.com/nodexemperor/testnet/raw/main/terp/app_terpd_installer && bash app_terpd_installer
 ```
 ### Public Endpoint
 
