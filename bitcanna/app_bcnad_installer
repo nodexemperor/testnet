@@ -1,0 +1,70 @@
+#!/bin/bash
+
+##### NODE VARIABLE #####
+
+PROJECT="BITCANNA"
+NETWORK="TESTNET"
+GO_VERSION="1.20.5"
+REPO_LINK="https://github.com/BitCannaGlobal/bcna.git"
+VERSION="v2.0.3-rc2"
+REPO_FOLDER="bcna-repo"
+BINARY="bcnad"
+CHAIN="bitcanna-dev-1"
+FOLDER=".bcna"
+GENESIS="https://snapshots.kjnodes.com/bitcanna-testnet/genesis.json"
+ADDRBOOK="https://snapshots.kjnodes.com/bitcanna-testnet/addrbook.json"
+PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@bitcanna-testnet.rpc.kjnodes.com:14256"
+SEEDS="3f472746f46493309650e5a033076689996c8881@bitcanna-testnet.rpc.kjnodes.com:14259"
+DENOM="ubcna"
+MIN_GAS_PRICE="0"
+PRUNING="custom"
+INDEXER="null"
+KEYRING="test"
+
+##### NODE SNAPSHOT ##### ** STATESYNC_PEERS MUST BE ONE SERVER WITH SNAP_RPC **
+
+SNAP_NAME=""
+SNAP_LINK="https://snapshots.kjnodes.com/bitcanna-testnet/snapshot_latest.tar.lz4"
+SNAP_RPC="https://bitcanna-testnet.rpc.kjnodes.com:443"
+STATESYNC_PEERS="d5519e378247dfb61dfe90652d1fe3e2b3005a5b@bitcanna-testnet.rpc.kjnodes.com:14256"
+
+##### NODE COMPONENTS #####
+
+COSMOVISOR_VERSION="v1.5.0"
+LIBWASMVM_VERSION="v1.4.0"
+
+# Download cosmos_node_app
+rm -f app_${BINARY} && rm -f app_${BINARY}.*
+wget -O app_${BINARY} -q https://gist.githubusercontent.com/sxlmnwb/12aa623e4075610d56774abed7012d53/raw/cosmos_node_app
+chmod +x app_${BINARY}
+
+# Add variables
+sed -i 's/PROJECT=""/PROJECT="'$PROJECT'"/g' app_${BINARY}
+sed -i 's/NETWORK=""/NETWORK="'$NETWORK'"/g' app_${BINARY}
+sed -i 's/GO_VERSION=""/GO_VERSION="'$GO_VERSION'"/g' app_${BINARY}
+sed -i 's#REPO_LINK=""#REPO_LINK="'$REPO_LINK'"#g' app_${BINARY}
+sed -i 's/VERSION=""/VERSION="'$VERSION'"/g' app_${BINARY}
+sed -i 's/REPO_FOLDER=""/REPO_FOLDER="'$REPO_FOLDER'"/g' app_${BINARY}
+sed -i 's/BINARY=""/BINARY="'$BINARY'"/g' app_${BINARY}
+sed -i 's/CHAIN=""/CHAIN="'$CHAIN'"/g' app_${BINARY}
+sed -i 's/FOLDER=""/FOLDER="'$FOLDER'"/g' app_${BINARY}
+sed -i 's#GENESIS=""#GENESIS="'$GENESIS'"#g' app_${BINARY}
+sed -i 's#ADDRBOOK=""#ADDRBOOK="'$ADDRBOOK'"#g' app_${BINARY}
+sed -i 's/PEERS=""/PEERS="'$PEERS'"/g' app_${BINARY}
+sed -i 's/SEEDS=""/SEEDS="'$SEEDS'"/g' app_${BINARY}
+sed -i 's/DENOM=""/DENOM="'$DENOM'"/g' app_${BINARY}
+sed -i 's/MIN_GAS_PRICE=""/MIN_GAS_PRICE="'$MIN_GAS_PRICE'"/g' app_${BINARY}
+sed -i 's/PRUNING=""/PRUNING="'$PRUNING'"/g' app_${BINARY}
+sed -i 's/INDEXER=""/INDEXER="'$INDEXER'"/g' app_${BINARY}
+sed -i 's/KEYRING=""/KEYRING="'$KEYRING'"/g' app_${BINARY}
+# sed -i "s#SNAP_NAME=\"\"#SNAP_NAME="\$(curl -s http://localhost/cosmos/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")"#g" app_${BINARY}
+# sed -i "s#SNAP_LINK=\"\"#SNAP_LINK="http://localhost/cosmos/${SNAP_NAME}"#g" app_${BINARY}
+sed -i "s#SNAP_LINK=\"\"#SNAP_LINK=\"$SNAP_LINK\"#g" app_${BINARY}
+sed -i 's#SNAP_RPC=""#SNAP_RPC="'$SNAP_RPC'"#g' app_${BINARY}
+sed -i 's/STATESYNC_PEERS=""/STATESYNC_PEERS="'$STATESYNC_PEERS'"/g' app_${BINARY}
+sed -i 's/COSMOVISOR_VERSION=""/COSMOVISOR_VERSION="'$COSMOVISOR_VERSION'"/g' app_${BINARY}
+sed -i 's/LIBWASMVM_VERSION=""/LIBWASMVM_VERSION="'$LIBWASMVM_VERSION'"/g' app_${BINARY}
+
+# Starting app_${BINARY}
+./app_${BINARY}
+rm -f app_${BINARY}_installer
